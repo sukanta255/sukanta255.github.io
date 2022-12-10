@@ -26,8 +26,6 @@ const Navbar = () => {
   return (
     <Box w={"100%"} my={["-20"]} position={"fixed"} zIndex={"25"}>
       <Flex
-
-
         bg={useColorModeValue("blue.100", "blue.900")}
         px={4}
         h={16}
@@ -36,7 +34,6 @@ const Navbar = () => {
       >
         <HStack spacing={8}>
           <Box
-          // bg={"#2563EB"}
             bgGradient="linear(to-r, green, green)"
             bgClip="text"
             fontSize="2xl"

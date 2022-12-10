@@ -63,7 +63,7 @@ const Profile = () => {
               {" "}
               <Typewriter
                 options={{
-                  strings: ["Hi, I am Sukanta Pramanik","I'm a Full Stack Web Devloper"
+                  strings: ["Hi, I am Sukanta Pramanik","Full Stack Web Devloper"
                 ],
                   autoStart: true,
                   loop: true,
@@ -75,9 +75,9 @@ const Profile = () => {
               fontSize={"large"}
               fontStyle={"sans-serif"}
             >
-              A Full-Stack developer is a professional responsible for working on both front-end and back-end development processes.
-              They design, develop, and maintain fully-fledged and functioning platforms with databases or servers. 
-              A team player and a collaborative developer having Leadership, Management, and teaching skills
+              I am a full stack web developer with excellent knowledge of developing
+              web services and a good record of professional achivement having strong technical, 
+              good communication, organizational, and interpersonal skills.
             </Text>
             <Stack
               spacing={{ base: 4, sm: 6 }}
