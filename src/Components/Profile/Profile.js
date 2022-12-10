@@ -1,0 +1,124 @@
+import React from "react";
+import {
+  Container,
+  Stack,
+  Flex,
+  Box,
+  Heading,
+  Text,
+  Button,
+  Image,
+  Icon,
+  useColorModeValue,
+} from "@chakra-ui/react";
+import Resume from "./SukantaPramanik.pdf";
+import { ChevronRightIcon } from "@chakra-ui/icons";
+import Typewriter from "typewriter-effect";
+import SukantaImage from "./myimage/sukanta.jpg";
+
+const Profile = () => { 
+  return (
+    <>
+      <Container id="home" maxW={"7xl"} isLazy marginTop={["20"]} >
+        <Stack
+          align={"center"}
+          spacing={{ base: 8, md: 10 }}
+          py={{ base: 20, md: 19 }}
+          direction={{ base: "column", md: "row" }}
+        >
+          <Stack flex={1} spacing={{ base: 5, md: 6 }}>
+            <Heading
+              lineHeight={1.1}
+              fontWeight={600}
+              fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
+              fontFamily={"sans-serif"}
+            >
+              <Text
+                as={"span"}
+                position={"relative"}
+                _after={{
+                  
+                  width: "full",
+                  height: "20%",
+                  position: "absolute",
+                  bottom: 2,
+                  left: 0,
+                  bgGradient: "linear(to-r, #EC9F05, #FF4E00)",
+                  zIndex: -1,
+                }}
+              >
+                Welcome to my
+              </Text>
+              <br />
+              <Text
+                as={"span"}
+                color={"grey.100"}
+                bgGradient="linear(to-r, violet, violet)"
+                bgClip="text"
+              >
+                Portfolio!
+              </Text>
+            </Heading>
+            <Heading>
+              {" "}
+              <Typewriter
+                options={{
+                  strings: ["Hi, I am Sukanta Pramanik","I'm a Full Stack Web Devloper"
+                ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </Heading>
+            <Text
+              color={useColorModeValue("black", "white")}
+              fontSize={"large"}
+              fontStyle={"sans-serif"}
+            >
+              A Full-Stack developer is a professional responsible for working on both front-end and back-end development processes.
+              They design, develop, and maintain fully-fledged and functioning platforms with databases or servers. 
+              A team player and a collaborative developer having Leadership, Management, and teaching skills
+            </Text>
+            <Stack
+              spacing={{ base: 4, sm: 6 }}
+              direction={{ base: "column", sm: "row" }}>
+            
+              <a href={Resume} target=" " download={"Sukanta Pramanik Resume"}>
+                <Button
+                  rounded={"full"}
+                  rightIcon={<ChevronRightIcon />}
+                  size={"lg"}
+                  colorScheme={"red"}
+                  fontWeight={"normal"}
+                  bgGradient="linear(to-r, #007500, #007500)"
+                  _hover={{ bgGradient: "linear(to-l, #007500, #007500)" }}
+                  w="fit-content"
+                >
+                  Resume
+                </Button>
+              </a>
+            </Stack>
+          </Stack>
+          <Flex
+            flex={1}
+            justify={"center"}
+            align={"center"}
+            position={"relative"}
+            w={"full"}
+          >
+              <Image
+                alt={"Sukanta"}
+                fit={"cover"}
+                align={"center"}
+                w={"90%"}
+                h={"90%"}
+                style={{width: 400, height: 400, borderRadius: "50%"}} 
+                src={SukantaImage}
+              />
+          </Flex>
+        </Stack>
+      </Container>
+    </>
+  );
+};
+export default Profile;
