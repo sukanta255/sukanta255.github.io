@@ -11,7 +11,7 @@ import {
   Icon,
   useColorModeValue,
 } from "@chakra-ui/react";
-import Resume from "./SukantaPramanik.pdf";
+import Resume from "./Sukanta-Pramanik-Resume.pdf";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import Typewriter from "typewriter-effect";
 import SukantaImage from "./myimage/sukanta.jpg";
@@ -75,7 +75,7 @@ const Profile = () => {
               fontSize={"large"}
               fontStyle={"sans-serif"}
             >
-              I am a full stack web developer with excellent knowledge of developing
+              I am a full stack web developer as well as excellent knowledge of developing
               web services and a good record of professional achivement having strong technical, 
               good communication, organizational, and interpersonal skills.
             </Text>
@@ -83,7 +83,7 @@ const Profile = () => {
               spacing={{ base: 4, sm: 6 }}
               direction={{ base: "column", sm: "row" }}>
             
-              <a href={Resume} target=" " download={"Sukanta Pramanik Resume"}>
+              <a href={Resume} target=" " download={"Sukanta-Pramanik-Resume"}>
                 <Button
                   rounded={"full"}
                   rightIcon={<ChevronRightIcon />}

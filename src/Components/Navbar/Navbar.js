@@ -16,7 +16,7 @@ import {
   Text,
   VStack
 } from "@chakra-ui/react";
-import Resume from "../Profile/SukantaPramanik.pdf";
+import Resume from "../Profile/Sukanta-Pramanik-Resume.pdf";
 import { HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 
 const Navbar = () => {
@@ -121,7 +121,7 @@ const Navbar = () => {
             <Link
               href={Resume}
               target="_blank"
-              download={"Sukanta Pramanik Resume"}
+              download={"Sukanta-Pramanik-Resume"}
               px={2}
               spacing={4}
               display={{ base: "none", md: "flex" }}
@@ -246,7 +246,7 @@ const Navbar = () => {
               <Link href={Resume}
                 onClick={onClose}
                 target="_blank"
-                download={"Subham_Resume"}>
+                download={"Sukanta-Pramanik-Resume"}>
                 <Text
                   fontSize={["20px"]}
                   color={["white"]}
