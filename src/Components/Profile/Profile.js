@@ -69,6 +69,7 @@ const Profile = () => {
                   loop: true,
                 }}
               /> */}
+              
               <h1>Hi, I am Sukanta Pramanik</h1>
               <h1>Full Stack Web Developer</h1>
             </Heading>
