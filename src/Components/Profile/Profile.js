@@ -86,7 +86,8 @@ const Profile = () => {
               spacing={{ base: 4, sm: 6 }}
               direction={{ base: "column", sm: "row" }}>
             
-              <a href={Resume} target=" " download={"Sukanta-Pramanik-Resume"}>
+              {/* <a href={Resume} target="_blank" download={"Sukanta-Pramanik-Resume"}> */}
+              <a href="https://drive.google.com/file/d/1gfPqRjprl8eAC1etJSStw6e3ErBExm5h/view" target="_blank" >
                 <Button
                   rounded={"full"}
                   rightIcon={<ChevronRightIcon />}
