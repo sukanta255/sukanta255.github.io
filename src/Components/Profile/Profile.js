@@ -97,6 +97,7 @@ const Profile = () => {
                   bgGradient="linear(to-r, #007500, #007500)"
                   _hover={{ bgGradient: "linear(to-l, #007500, #007500)" }}
                   w="fit-content"
+                  color="white"
                 >
                   Resume
                 </Button>
