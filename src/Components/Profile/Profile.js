@@ -60,15 +60,17 @@ const Profile = () => {
               </Text>
             </Heading>
             <Heading>
-              {" "}
+              {/* {" "}
               <Typewriter
                 options={{
-                  strings: ["Hi, I am Sukanta Pramanik","Full Stack Web Devloper"
+                  strings: ["Hi, I am Sukanta Pramanik","Full Stack Web Developer"
                 ],
                   autoStart: true,
                   loop: true,
                 }}
-              />
+              /> */}
+              <h1>Hi, I am Sukanta Pramanik</h1>
+              <h1>Full Stack Web Developer</h1>
             </Heading>
             <Text
               color={useColorModeValue("black", "white")}
