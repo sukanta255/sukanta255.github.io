@@ -119,6 +119,7 @@ const Profile = () => {
                 style={{width: 400, height: 420, borderRadius: "50%"}} 
                 src={SukantaImage}
                 // border={"1px solid black"}
+                
               />
           </Flex>
         </Stack>
