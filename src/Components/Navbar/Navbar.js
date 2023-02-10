@@ -118,7 +118,7 @@ const Navbar = () => {
               Contact
             </Link>
             <Link
-              href="https://drive.google.com/file/d/1gfPqRjprl8eAC1etJSStw6e3ErBExm5h/view"
+              href="https://drive.google.com/file/d/1AHgx25g-lcb4VxV65Z5A4OBrx1TWGBA8/view?usp=sharing"
               target="_blank"
               px={2}
               spacing={4}

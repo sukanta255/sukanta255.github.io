@@ -79,15 +79,14 @@ const Profile = () => {
               fontStyle={"sans-serif"}
             >
               I am a full stack web developer as well as excellent knowledge of developing
-              web services and a good record of professional achivement having strong technical, 
-              good communication, organizational, and interpersonal skills.
+              web services and good communication, organizational, and interpersonal skills.
             </Text>
             <Stack
               spacing={{ base: 4, sm: 6 }}
               direction={{ base: "column", sm: "row" }}>
             
               {/* <a href={Resume} target="_blank" download={"Sukanta-Pramanik-Resume"}> */}
-              <a href="https://drive.google.com/file/d/1gfPqRjprl8eAC1etJSStw6e3ErBExm5h/view" target="_blank" >
+              <a href="https://drive.google.com/file/d/1AHgx25g-lcb4VxV65Z5A4OBrx1TWGBA8/view?usp=sharing" target="_blank" >
                 <Button
                   rounded={"full"}
                   rightIcon={<ChevronRightIcon />}
@@ -117,8 +116,9 @@ const Profile = () => {
                 align={"center"}
                 w={"90%"}
                 h={"90%"}
-                style={{width: 400, height: 400, borderRadius: "50%"}} 
+                style={{width: 400, height: 420, borderRadius: "50%"}} 
                 src={SukantaImage}
+                // border={"1px solid black"}
               />
           </Flex>
         </Stack>
