@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.a325c82a.js",
-    "static/media/Sukanta-Pramanik-Resume.pdf": "/static/media/Sukanta-Pramanik-Resume.099d38077a02cdebcb7c.pdf",
+    "main.js": "/static/js/main.5d4bb663.js",
+    "static/media/fw18_0348-Sukanta-Pramanik-Resume.pdf": "/static/media/fw18_0348-Sukanta-Pramanik-Resume.6fd66c0dc0e4e2ed205f.pdf",
     "static/media/sukanta.jpg": "/static/media/sukanta.63414bcdaedb527e8ff9.jpg",
     "index.html": "/index.html",
     "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.a325c82a.js.map": "/static/js/main.a325c82a.js.map"
+    "main.5d4bb663.js.map": "/static/js/main.5d4bb663.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.a325c82a.js"
+    "static/js/main.5d4bb663.js"
   ]
 }
