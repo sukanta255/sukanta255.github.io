@@ -26,6 +26,15 @@ import {
   IoLogoGithub,
   IoLogoCss3,
 } from "react-icons/io5";
+import {
+  SiPostman,
+  SiExpress,
+  SiNetlify
+} from "react-icons/si";
+import {
+  BsCode
+} from "react-icons/bs";
+
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
@@ -135,7 +144,7 @@ const About = () => {
           <Feature
             icon={
               <Icon
-                as={SiMongodb}
+                as={SiExpress}
                 color={useColorModeValue("green.500", "green.300")}
                 boxSize={"62"}
                 _hover={{
@@ -259,6 +268,110 @@ const About = () => {
         />
           <Heading color={useColorModeValue("black", "white")} size={"md"}>NextJS</Heading >
         </Flex>
+        <Flex gap={"3"} direction={"column"} align={"center"}>
+          <Feature
+            icon={
+              <Icon
+                as={SiMongodb}
+                color={useColorModeValue("green.500", "green.300")}
+                boxSize={"62"}
+                _hover={{
+                  bgGradient: "linear(to-r, #18A558, #116530)",
+                }}
+              />
+            }
+            iconBg={useColorModeValue("black", "white")}
+      />
+          <Heading color={useColorModeValue("black", "white")} size={"md"}>MongoDB</Heading >
+        </Flex>
+      </SimpleGrid>
+      <Center p={"10"}>
+        <Heading color={useColorModeValue("black", "white")} size="md">
+          Tools
+        </Heading >
+      </Center>
+      <SimpleGrid columns={{ base: 3, sm: 5, md: 7 }} spacing={8} >
+        <Flex gap={"3"} direction={"column"} align={"center"}>
+          <Feature
+            icon={
+              <Icon
+                as={BsCode}
+                color={useColorModeValue("blue.200", "blue.500")}
+                boxSize={"62"}
+                _hover={{
+                  bgGradient: "linear(to-r, #18A558, #116530)",
+                }}
+              />
+            }
+            iconBg={useColorModeValue("black", "white")}
+          />
+          <Heading color={useColorModeValue("black", "white")} size={"md"}>Vs Code</Heading >
+        </Flex>
+        <Flex gap={"3"} direction={"column"} align={"center"}>
+          <Feature
+            icon={
+              <Icon
+                as={SiMongodb}
+                color={useColorModeValue("green.500")}
+                boxSize={"62"}
+                _hover={{
+                  bgGradient: "linear(to-r, #18A558, #116530)",
+                }}
+              />
+            }
+            iconBg={useColorModeValue("black", "green.900")}
+          />
+          <Heading color={useColorModeValue("black", "white")} size={"md"}>MongoDb Atlas</Heading >
+        </Flex>
+        <Flex gap={"3"} direction={"column"} align={"center"}>
+          <Feature
+            icon={
+              <Icon
+                as={SiNetlify}
+                color={useColorModeValue("yellow.300", "yellow.400")}
+                boxSize={"62"}
+                _hover={{
+                  bgGradient: "linear(to-r, #18A558, #116530)",
+                }}
+              />
+            }
+            iconBg={useColorModeValue("black", "white")}
+          />
+          <Heading color={useColorModeValue("black", "white")} size={"md"}>Netlify</Heading >
+        </Flex>
+        <Flex gap={"3"} direction={"column"} align={"center"}>
+        <Feature
+            icon={
+              <Icon
+                as={SiPostman}
+                color={useColorModeValue("white", "blue.700")}
+                boxSize={"62"}
+                _hover={{
+                  bgGradient: "linear(to-r, #18A558, #116530)",
+                }}
+              />
+            }
+            iconBg={useColorModeValue("black", "white")}
+          />
+          <Heading color={useColorModeValue("black", "white")} size={"md"}>Postman</Heading>
+        </Flex>
+        <Flex gap={"3"} direction={"column"} align={"center"}>
+          <Feature
+            icon={
+              <Icon
+                as={IoLogoGithub}
+                color={useColorModeValue("white", "blue.700")}
+                boxSize={"62"}
+                _hover={{
+                  bgGradient: "linear(to-r, #18A558, #116530)",
+                }}
+              />
+            }
+            iconBg={useColorModeValue("black", "white")}
+          />
+          <Heading color={useColorModeValue("black", "white")} size={"md"}>Git</Heading >
+        </Flex>
+
       </SimpleGrid>
     </Container>
   );
