@@ -11,7 +11,7 @@ import {
   Icon,
   useColorModeValue,
 } from "@chakra-ui/react";
-import Resume from "./Sukanta-Pramanik-Resume.pdf";
+import Resume from "../Profile/fw18_0348-Sukanta-Pramanik-Resume.pdf";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import Typewriter from "typewriter-effect";
 import SukantaImage from "./myimage/sukanta.jpg";
@@ -85,8 +85,9 @@ const Profile = () => {
               spacing={{ base: 4, sm: 6 }}
               direction={{ base: "column", sm: "row" }}>
             
-              {/* <a href={Resume} target="_blank" download={"Sukanta-Pramanik-Resume"}> */}
-              <a href="https://drive.google.com/file/d/1AHgx25g-lcb4VxV65Z5A4OBrx1TWGBA8/view?usp=sharing" target="_blank" >
+              {/* <a href={Resume} target={"_blank"} download={"fw18_0348-Sukanta-Pramanik-Resume"}> */}
+              {/* <a href="https://drive.google.com/file/d/1AHgx25g-lcb4VxV65Z5A4OBrx1TWGBA8/view?usp=sharing" target="_blank"> */}
+              {/* <a href="https://drive.google.com/file/d/1AHgx25g-lcb4VxV65Z5A4OBrx1TWGBA8/view?usp=sharing" target="_blank" > */}
                 <Button
                   rounded={"full"}
                   rightIcon={<ChevronRightIcon />}
@@ -97,10 +98,22 @@ const Profile = () => {
                   _hover={{ bgGradient: "linear(to-l, #007500, #007500)" }}
                   w="fit-content"
                   color="white"
+                  target={"_blank"}
                 >
-                  Resume
+                  <a
+                    href={Resume}
+                    download
+                    smooth="true"
+                    onClick={()=>
+                      window.open(
+                        "https://drive.google.com/file/d/12bX-YX0u4rEhRb8Tkxjay5IXY03xinL1/view?usp=sharing"
+                      )
+                    }
+                  >
+
+                    Resume
+                  </a>
                 </Button>
-              </a>
             </Stack>
           </Stack>
           <Flex

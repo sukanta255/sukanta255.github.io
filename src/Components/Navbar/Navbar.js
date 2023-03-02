@@ -17,6 +17,7 @@ import {
   VStack
 } from "@chakra-ui/react";
 import { HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
+import Resume from "../Profile/fw18_0348-Sukanta-Pramanik-Resume.pdf";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -117,8 +118,13 @@ const Navbar = () => {
             >
               Contact
             </Link>
+            {/* <a href="https://drive.google.com/file/d/1AHgx25g-lcb4VxV65Z5A4OBrx1TWGBA8/view?usp=sharing" target="_blank" > */}
             <Link
-              href="https://drive.google.com/file/d/1AHgx25g-lcb4VxV65Z5A4OBrx1TWGBA8/view?usp=sharing"
+              // href="https://drive.google.com/file/d/1AHgx25g-lcb4VxV65Z5A4OBrx1TWGBA8/view?usp=sharing"
+              // href="https://drive.google.com/drive/folders/1zRAn8JaH5uaKKmm3-rSeMc9kW9DB4E7N"
+              
+              href={Resume}
+              // to={"https://drive.google.com/file/d/1AHgx25g-lcb4VxV65Z5A4OBrx1TWGBA8/view?usp=sharing"}
               target="_blank"
               px={2}
               spacing={4}
@@ -129,9 +135,23 @@ const Navbar = () => {
                 textDecoration: "none",
                 bg: useColorModeValue("gray.200", "gray.700"),
               }}
+              download
             >
-              Resume
+            <a
+                    href={Resume}
+                    download
+                    smooth="true"
+                    onClick={()=>
+                      window.open(
+                        "https://drive.google.com/file/d/12bX-YX0u4rEhRb8Tkxjay5IXY03xinL1/view?usp=sharing"
+                      )
+                    }
+                  >
+
+                    Resume
+                  </a>
             </Link>
+            {/* </a> */}
           </HStack>
         </HStack>
         <Flex alignItems={"center"}>
@@ -176,6 +196,7 @@ const Navbar = () => {
                   textDecorationLine: "underline",
                   textDecorationColor: "red",
                   textDecorationThickness: "3px",
+                  
                 }}
               >
                 Home
@@ -241,7 +262,7 @@ const Navbar = () => {
               >
                 Contact
               </Link>
-              <Link href="https://drive.google.com/file/d/1gfPqRjprl8eAC1etJSStw6e3ErBExm5h/view"
+              <Link href="https://drive.google.com/drive/folders/1zRAn8JaH5uaKKmm3-rSeMc9kW9DB4E7N"
                 target="_blank"
                 >
                 <Text
