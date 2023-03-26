@@ -476,7 +476,111 @@ function Projects(){
               </Button>
             </Stack>
           </Flex>
-        </Center>         
+        </Center>
+        <Center>
+          <Flex
+            boxShadow={"1px 2px 5px 10px gray"}
+            h={["500px", "550px", "500px", "560px"]}
+            w={["300px", "270px", "370px", "400px"]}
+            borderRadius={"md"}
+            direction={"column"}
+          >
+            <Image
+              borderRadius={"md"}
+              src={"https://user-images.githubusercontent.com/107980582/221499524-d1037907-1c3b-4a00-9ac4-f843eedd9784.png"}
+              w={"100%"}
+            />
+            <Box p={["2","2","4"]}>
+              <Center style={{ width: "100%" }}>
+                <Heading size={"lg"} p={"2"}>
+                  Koovs Clone
+                </Heading>
+              </Center>
+              <Text
+                p={"2"}
+                fontSize={"large"}
+                fontStyle={"sans-serif"}
+                align={"center"}
+              >
+                Clone of Koovs.com, koovs is a Ecomerse related website which helps you to find the different kinds of the cloths products.
+              </Text>
+
+              <Text align={"center"}>
+                <span style={{ color: "red", fontWeight: "bold" }}>
+                  Tech Stacks
+                </span>{" "}
+                React js, Redux, Chakra UI, mongoDB
+              </Text>
+            </Box>
+            <Stack
+              mt={"1rem"}
+              direction={"row"}
+              p={"4"}
+              padding={1}
+              justifyContent={"space-between"}
+              alignItems={"center"}
+            >
+              <Button
+                fontSize={"sm"}
+                rounded={"full"}
+                _
+                focus={{
+                  bg: "gray.200",
+                }}
+                _hover={{
+                  bgGradient: "linear(to-r, #18A558, #116530)",
+                }}
+                onClick={() => {
+                  window.open(
+                    "https://drive.google.com/file/d/1mWnEfeydj_GwPxChGXH-wRMcomqroBlF/view",
+                    "_blank"
+                  );
+                }}
+              >
+                {<BsFillCameraVideoFill size="28px" />}
+              </Button>
+              <Button
+                fontSize={"sm"}
+                rounded={"full"}
+                _focus={{
+                  bg: "gray.200",
+                }}
+                _hover={{
+                  bgGradient: "linear(to-r, #18A558, #116530)",
+                }}
+                onClick={() => {
+                  window.open(
+                    "https://frontend-mohit-6164.vercel.app/",
+                    "_blank"
+                  );
+                }}
+              >
+                {<BsFillEyeFill size="28px" />}
+              </Button>
+              {" "}
+              <Button
+                fontSize={"sm"}
+                rounded={"full"}
+                bg={"black"}
+                color={"white"}
+                boxShadow={
+                  "0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
+                }
+                _hover={{
+                  bgGradient: "linear(to-r, #18A558, #116530)",
+                }}
+                onClick={() => {
+                  window.open(
+                    "https://github.com/sukanta255/ordinary-summer-5089",
+                    "_blank"
+                  );
+                }}
+              >
+                {<BsGithub size="28px" />}
+              </Button>
+            </Stack>
+          </Flex>
+        </Center>          
       </SimpleGrid>
     </>
   );

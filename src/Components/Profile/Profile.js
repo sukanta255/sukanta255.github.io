@@ -106,7 +106,7 @@ const Profile = () => {
                     smooth="true"
                     onClick={()=>
                       window.open(
-                        "https://drive.google.com/file/d/12bX-YX0u4rEhRb8Tkxjay5IXY03xinL1/view?usp=sharing"
+                        "https://drive.google.com/file/d/1293HZGWRffK-BndxA_-L2n3VRKiuivl8/view?usp=sharing"
                       )
                     }
                   >
