@@ -106,7 +106,7 @@ const Profile = () => {
                     smooth="true"
                     onClick={()=>
                       window.open(
-                        "https://drive.google.com/file/d/1293HZGWRffK-BndxA_-L2n3VRKiuivl8/view?usp=sharing"
+                        "https://drive.google.com/file/d/12MBC7pdBSAw8m4WY0kJTkgXfbBPp_Gdh/view?usp=sharing"
                       )
                     }
                   >
@@ -129,7 +129,7 @@ const Profile = () => {
                 align={"center"}
                 w={"90%"}
                 h={"90%"}
-                style={{width: 400, height: 420, borderRadius: "50%"}} 
+                style={{width: 410, height: 470, borderRadius: "50%"}} 
                 src={SukantaImage}
                 // border={"1px solid black"}
                 

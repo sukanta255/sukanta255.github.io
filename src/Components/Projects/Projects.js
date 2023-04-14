@@ -76,7 +76,7 @@ function Projects(){
             <Box p={["2","2","4"]}>
               <Center style={{ width: "100%" }}>
                 <Heading size={"lg"} p={"2"}>
-                  Bewakoof Website Clone
+                  Bewakoof Clone
                 </Heading>
               </Center>
               <Text
