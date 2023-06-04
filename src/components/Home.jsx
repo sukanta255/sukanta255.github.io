@@ -60,9 +60,16 @@ export const Home = () => {
         </p>
         <div className="homeCont">
           <a
-            href="/Sukanta-Pramanik-Resume.pdf"
+            href="/fw18_0348-Sukanta-Pramanik-Resume.pdf"
             style={{ textDecoration: "none" }}
-            download="Sukanta-Pramanik-Resume"
+            // download="Sukanta-Pramanik-Resume"
+            download
+            smooth="true"
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/12MBC7pdBSAw8m4WY0kJTkgXfbBPp_Gdh/view?usp=sharing"
+              )
+            }
           >
             <button>
               Resume{" "}
