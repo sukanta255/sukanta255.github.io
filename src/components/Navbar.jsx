@@ -148,7 +148,7 @@ export const Navbar = () => {
             smooth="true"
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/12MBC7pdBSAw8m4WY0kJTkgXfbBPp_Gdh/view?usp=sharing"
+                "https://drive.google.com/file/d/1N7iE3RrOHUf44SqilwWSCyT_qsPuAPYO/view?usp=sharing"
               )
             }
           >
@@ -303,7 +303,7 @@ export const Navbar = () => {
           </p>
           <p>
             <a
-              href="https://drive.google.com/file/d/1qv0vOIZSqPDjyO7rtUh26oZBa8OzToVQ/view?usp=sharing"
+              href="https://drive.google.com/file/d/1N7iE3RrOHUf44SqilwWSCyT_qsPuAPYO/view?usp=sharing"
               target="_blank"
             >
               RESUME{" "}
