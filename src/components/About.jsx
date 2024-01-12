@@ -22,7 +22,7 @@ export const About = () => {
         <div id="myselfdesc" data-aos="zoom-in">
           <div id="mysitem">
             <p>
-              A motivated and innovative aspiring Full Stack Web Developer with
+              A motivated and innovative Full Stack Web Developer with
               hands-on experience in building websites with MERN stack and
               various web technologies. Having 1200+ hours of coding using HTML,
               CSS, JavaScript, React, Chakra-UI and 100+ hours of soft skill

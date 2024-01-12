@@ -67,7 +67,8 @@ export const Home = () => {
             smooth="true"
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/1N7iE3RrOHUf44SqilwWSCyT_qsPuAPYO/view?usp=sharing"
+                // "https://drive.google.com/file/d/1N7iE3RrOHUf44SqilwWSCyT_qsPuAPYO/view?usp=sharing"
+                "https://drive.google.com/file/d/1eUvfmoVrzQWGEeCRjWt1LznpwZ7rGqfy/view?usp=sharing"
               )
             }
           >
