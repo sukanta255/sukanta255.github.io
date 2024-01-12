@@ -135,7 +135,7 @@ export const Projects = () => {
             <a
               style={{ textDecoration: "none" }}
 {/*               href="https://licious-freezing.netlify.app/" */}
-              https://dancing-alpaca-d252ea.netlify.app/
+              href="https://dancing-alpaca-d252ea.netlify.app/"              
               target="_blank"
             >
               <button>
