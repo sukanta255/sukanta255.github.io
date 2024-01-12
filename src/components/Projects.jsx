@@ -134,7 +134,8 @@ export const Projects = () => {
           <div style={{ "--icBg": light ? "transparent" : "#0a192f" }}>
             <a
               style={{ textDecoration: "none" }}
-              href="https://licious-freezing.netlify.app/"
+{/*               href="https://licious-freezing.netlify.app/" */}
+              href="https://dancing-alpaca-d252ea.netlify.app/"
               target="_blank"
             >
               <button>
