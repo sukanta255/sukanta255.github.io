@@ -1,8 +1,9 @@
-import './App.css'
+﻿import './App.css'
 import { About } from './components/About'
 import { Home } from './components/Home'
 import { Navbar } from './components/Navbar'
 import { Education } from './components/Education'
+import { Experience } from './components/Experience'
 import { Skills } from './components/Skills'
 import { Projects } from './components/Projects'
 import { GithubStats } from './components/GithubStats'
@@ -24,6 +25,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <Experience />
       <Education />
       <Skills />
       <Projects />
@@ -34,3 +36,7 @@ function App() {
 }
 
 export default App
+
+
+
+

@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+﻿import { useContext, useEffect } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import { BiDownload } from "react-icons/bi";
 import "../styles/home.css";
@@ -22,19 +22,34 @@ const myTags = [
   "Netlify",
   "Cyclic",
   "Render",
+  "Generative AI",
+  "Agentic AI",
+  "Prompt Engineering",
+  "OpenAI API",
+  "n8n",
+  "LangChain",
+  "Hugging Face",
+  "RAG",
 ];
 
 export const Home = () => {
   const { light } = useContext(ThemeContext);
 
   useEffect(() => {
-    TagCloud(".content", myTags, {
+    const container = document.querySelector(".content");
+    if (!container) return;
+
+    // Clear an existing cloud before creating one, including during hot reload.
+    container.querySelectorAll(".tagcloud").forEach((cloud) => cloud.remove());
+    const cloud = TagCloud(container, myTags, {
       radius: 200,
       maxSpeed: "fast",
       initSpeed: "fast",
       direction: 135,
       keep: true,
     });
+
+    return () => cloud?.destroy();
   }, []);
 
   return (
@@ -59,26 +74,7 @@ export const Home = () => {
           skills.
         </p>
         <div className="homeCont">
-          <a
-            href="/fw18_0348-Sukanta-Pramanik-Resume.pdf"
-            style={{ textDecoration: "none" }}
-            // download="Sukanta-Pramanik-Resume"
-            download
-            smooth="true"
-            onClick={() =>
-              window.open(
-                // "https://drive.google.com/file/d/1N7iE3RrOHUf44SqilwWSCyT_qsPuAPYO/view?usp=sharing"
-                "https://drive.google.com/file/d/1eUvfmoVrzQWGEeCRjWt1LznpwZ7rGqfy/view?usp=sharing"
-              )
-            }
-          >
-            <button>
-              Resume{" "}
-              <i>
-                <BiDownload />
-              </i>
-            </button>
-          </a>
+          <a href="https://drive.google.com/file/d/1BLNnagG3TOkGqjSZAMhL_uKQZQcwoBps/view?usp=sharing" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}><button>Resume <i><BiDownload /></i></button></a>
           <div
             className="homeIcCont"
             style={{ "--icColor": light ? "#0a192f" : "#edf2f8" }}
@@ -113,3 +109,6 @@ export const Home = () => {
     </div>
   );
 };
+
+
+

@@ -1,4 +1,4 @@
-#skill>p:first-child {
+﻿#skill>p:first-child {
     font-size: 33px;
     font-weight: 700;
     text-align: center;
@@ -193,3 +193,27 @@
         border-radius: 5px;
     }
 }
+.aiSkillTile {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 130px;
+}
+.aiSkillMark {
+    align-items: center;
+    background: linear-gradient(135deg, #17344d, #0d1b2e);
+    border: 1px solid #64ffda;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px #64ffda22;
+    color: #64ffda;
+    display: flex;
+    font-size: 22px;
+    font-weight: 700;
+    height: 80px;
+    justify-content: center;
+    margin: auto;
+    width: 80px;
+}
+.aiSkillTile p { margin-top: 6px !important; }
+
