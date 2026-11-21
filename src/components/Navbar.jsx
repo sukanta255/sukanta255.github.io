@@ -145,21 +145,7 @@ export const Navbar = () => {
           >
             Resume
           </a> */}
-          <a
-            href="/fw18_0348-Sukanta-Pramanik-Resume.pdf"
-            style={{ textDecoration: "none" }}
-            // download="Sukanta-Pramanik-Resume"
-            download
-            smooth="true"
-            onClick={() =>
-              window.open(
-                // "https://drive.google.com/file/d/1N7iE3RrOHUf44SqilwWSCyT_qsPuAPYO/view?usp=sharing"
-                "https://drive.google.com/file/d/1eUvfmoVrzQWGEeCRjWt1LznpwZ7rGqfy/view?usp=sharing"
-              )
-            }
-          >
-            Resume
-          </a>
+          <a href="https://drive.google.com/file/d/1BLNnagG3TOkGqjSZAMhL_uKQZQcwoBps/view?usp=sharing" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>Resume</a>
         </p>
         {light ? (
           <i
@@ -315,7 +301,7 @@ export const Navbar = () => {
           <p>
             <a
               // href="https://drive.google.com/file/d/1N7iE3RrOHUf44SqilwWSCyT_qsPuAPYO/view?usp=sharing"
-              href="https://drive.google.com/file/d/1eUvfmoVrzQWGEeCRjWt1LznpwZ7rGqfy/view?usp=sharing"
+              href="https://drive.google.com/file/d/1BLNnagG3TOkGqjSZAMhL_uKQZQcwoBps/view?usp=sharing"
               target="_blank"
             >
               RESUME{" "}
@@ -330,6 +316,7 @@ export const Navbar = () => {
     </div>
   );
 };
+
 
 
 
