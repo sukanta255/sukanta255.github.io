@@ -22,19 +22,34 @@ const myTags = [
   "Netlify",
   "Cyclic",
   "Render",
+  "Generative AI",
+  "Agentic AI",
+  "Prompt Engineering",
+  "OpenAI API",
+  "n8n",
+  "LangChain",
+  "Hugging Face",
+  "RAG",
 ];
 
 export const Home = () => {
   const { light } = useContext(ThemeContext);
 
   useEffect(() => {
-    TagCloud(".content", myTags, {
+    const container = document.querySelector(".content");
+    if (!container) return;
+
+    // Clear an existing cloud before creating one, including during hot reload.
+    container.querySelectorAll(".tagcloud").forEach((cloud) => cloud.remove());
+    const cloud = TagCloud(container, myTags, {
       radius: 200,
       maxSpeed: "fast",
       initSpeed: "fast",
       direction: 135,
       keep: true,
     });
+
+    return () => cloud?.destroy();
   }, []);
 
   return (
@@ -94,4 +109,6 @@ export const Home = () => {
     </div>
   );
 };
+
+
 
