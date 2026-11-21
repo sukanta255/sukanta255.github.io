@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+﻿import { useContext, useEffect } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import myImg from "../assets/myImg.jpg";
 import "../styles/about.css";
@@ -22,13 +22,7 @@ export const About = () => {
         <div id="myselfdesc" data-aos="zoom-in">
           <div id="mysitem">
             <p>
-              A motivated and innovative Full Stack Web Developer with
-              hands-on experience in building websites with MERN stack and
-              various web technologies. Having 1200+ hours of coding using HTML,
-              CSS, JavaScript, React, Chakra-UI and 100+ hours of soft skill
-              training. Curious to learn about new emerging web technologies.
-              Looking to start a career as a web developer with a reputed firm
-              driven by technology.
+              Full Stack Developer with nearly 3 years of combined experience across healthcare applications, product engineering, and hands-on development projects. I build scalable web applications with React, Next.js, Node.js, Express, MongoDB, SQL, and Redux, and work with secure authentication, session management, and monorepo architecture. I also build AI-powered workflows and business intelligence solutions using OpenAI APIs, n8n, and SQL.
             </p>
           </div>
         </div>
@@ -39,3 +33,5 @@ export const About = () => {
     </div>
   );
 };
+
+

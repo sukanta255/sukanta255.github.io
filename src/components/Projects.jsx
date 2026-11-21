@@ -1,4 +1,4 @@
-import { useContext } from "react";
+﻿import { useContext } from "react";
 import "../styles/projects.css";
 import { ThemeContext } from "../context/ThemeContext";
 import { GoProject } from "react-icons/go";
@@ -43,6 +43,28 @@ export const Projects = () => {
         {/* Featured <span>Projects </span>{" "} */}
         My Projects
       </p>
+      <div className="projectCard aiProjectCard">
+        <div className="prCardImg aiProjectArt" aria-label="Conversational analytics workflow preview">
+          <div className="aiWindow">
+            <p className="aiWindowLabel">BUSINESS INTELLIGENCE</p>
+            <p className="aiQuestion">Which region had the highest sales?</p>
+            <div className="aiFlow"><span>Question</span><b>→</b><span>AI SQL Agent</span><b>→</b><span>PostgreSQL</span></div>
+            <div className="aiBars"><i /><i /><i /><i /><i /></div>
+            <p className="aiInsight">Insight ready · Chart generated</p>
+          </div>
+        </div>
+        <div className="prCardContent">
+          <p>Conversational Business Intelligence</p>
+          <p>
+            An AI-powered analytics interface that lets users explore sales data by asking questions in natural language. An OpenAI model and SQL AI Agent in n8n translate questions into SQL, query PostgreSQL, and return insights with chart visualizations. Built around 1,000 sales records across 15 data columns.
+            <p><span>Tech Stack: </span>n8n, OpenAI API, PostgreSQL, SQL, JavaScript</p>
+          </p>
+          <div className="aiProjectTags" aria-label="Project technologies">
+            <span>OpenAI API</span><span>n8n</span><span>PostgreSQL</span><span>SQL</span>
+          </div>
+          <p className="aiProjectNote">Natural language → SQL → visual insights</p>
+        </div>
+      </div>
       <div className="projectCard">
         <div className="prCardImg">
           <img src={koovsImg} />
@@ -99,7 +121,7 @@ export const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="projectCard">
+            <div className="projectCard">
         <div className="prCardImg">
           <img src={liciousImg} />
         </div>
@@ -155,7 +177,7 @@ export const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="projectCard">
+            <div className="projectCard">
         <div className="prCardImg">
           <img src={bewakoofImg} />
         </div>
@@ -200,7 +222,7 @@ export const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="projectCard">
+            <div className="projectCard">
         <div className="prCardImg">
           <img src={travelocityImg} />
         </div>
@@ -247,7 +269,7 @@ export const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="projectCard">
+            <div className="projectCard">
         <div className="prCardImg">
           <img src={onemgImg} />
         </div>
@@ -294,3 +316,7 @@ export const Projects = () => {
     </div>
   );
 };
+
+
+
+

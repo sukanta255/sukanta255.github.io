@@ -1,4 +1,4 @@
-.projectCard {
+﻿.projectCard {
     display: flex;
     box-sizing: border-box;
     width: 100%;
@@ -12,6 +12,26 @@
     justify-content: space-between;
 }
 
+
+
+.aiProjectArt {
+    align-items: center;
+    background: radial-gradient(circle at 15% 15%, #183f58 0, transparent 45%), linear-gradient(135deg, #101c32, #172b46);
+    border-radius: 10px; box-sizing: border-box; display: flex; justify-content: center; min-height: 270px; padding: 24px;
+}
+.aiWindow { background: #0c1728; border: 1px solid #31506a; border-radius: 12px; box-shadow: 0 18px 45px #0005; color: #eef6ff; max-width: 480px; padding: 22px; width: 100%; }
+.aiWindowLabel { color: #64ffda; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; }
+.aiQuestion { background: #17263a; border-radius: 8px; color: #f5f8fc; font-size: 14px; margin-top: 16px; padding: 13px; }
+.aiFlow { align-items: center; color: #adc0d3; display: flex; flex-wrap: wrap; font-size: 10px; gap: 7px; justify-content: center; margin-top: 17px; }
+.aiFlow span { background: #1b2e43; border: 1px solid #31506a; border-radius: 20px; padding: 6px 9px; }
+.aiFlow b { color: #64ffda; }
+.aiBars { align-items: end; border-bottom: 1px solid #31506a; display: flex; gap: 12px; height: 74px; justify-content: center; margin: 18px auto 0; max-width: 200px; }
+.aiBars i { background: linear-gradient(#64ffda, #38a9ba); border-radius: 4px 4px 0 0; display: block; height: 42%; width: 18px; }
+.aiBars i:nth-child(2) { height: 74%; } .aiBars i:nth-child(3) { height: 57%; } .aiBars i:nth-child(4) { height: 92%; } .aiBars i:nth-child(5) { height: 66%; }
+.aiInsight { color: #9aafc3; font-size: 11px; margin-top: 12px; text-align: center; }
+.aiProjectTags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
+.aiProjectTags span { border: 1px solid #64ffda88; border-radius: 20px; color: var(--plight); font-size: 12px; padding: 5px 10px; }
+.aiProjectNote { color: #64ffda !important; font-size: 13px !important; font-weight: 600 !important; margin-top: 12px !important; }
 #projects {
     background-color: var(--bglightproject);
     width: 100vw;
@@ -167,7 +187,9 @@
 }
 
 @media all and (max-width:600px) {
-    #projects {
+    
+
+#projects {
         padding: 0px 30px;
         padding-bottom: 25px;
     }
@@ -199,3 +221,5 @@
         font-size: 25px;
     }
 }
+
+

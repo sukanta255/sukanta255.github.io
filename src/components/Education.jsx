@@ -1,4 +1,4 @@
-import { useContext } from "react";
+﻿import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import { FaUserGraduate } from "react-icons/fa";
 import { GoTriangleLeft, GoTriangleRight } from "react-icons/go";
@@ -45,10 +45,10 @@ export const Education = () => {
           <GoTriangleRight className="ic22" />
         </div>
         <div class="educardDet edd2">
-          <p>Bachelor Of Technology</p>
-          <p>Global Institute Of Management & Technology, Nadia , West Bengal</p>
-          <p>Computer Science & Engineering</p>
-          <p>2015 - 2019</p>
+          <p>B.Tech / B.E. in Computer Science &amp; Engineering</p>
+          <p>Maulana Abul Kalam Azad University of Technology</p>
+          <p>Computer Science &amp; Engineering</p>
+          <p>2019</p>
         </div>
         <div className="date d2"></div>
       </div>
@@ -69,3 +69,4 @@ export const Education = () => {
     </div>
   );
 };
+

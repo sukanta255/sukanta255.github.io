@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+﻿import { useContext, useState } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import "../styles/skills.css";
 import {
@@ -21,9 +21,10 @@ import { IoLogoNodejs } from "react-icons/io5";
 import mongoose from "../assets/mongoose.png";
 
 export const Skills = () => {
-  const [{ all, front, back }, showSkills] = useState({
+  const [{ all, front, ai }, showSkills] = useState({
     all: true,
     front: false,
+    ai: false,
   });
   const { light } = useContext(ThemeContext);
 
@@ -44,7 +45,7 @@ export const Skills = () => {
         <button
           class="button-75"
           role="button"
-          onClick={() => showSkills({ all: true, front: false })}
+          onClick={() => showSkills({ all: true, front: false, ai: false })}
           style={{
             backgroundImage: all
               ? "linear-gradient(135deg, green 5%, green)"
@@ -58,7 +59,7 @@ export const Skills = () => {
         <button
           class="button-75"
           role="button"
-          onClick={() => showSkills({ all: false, front: true })}
+          onClick={() => showSkills({ all: false, front: true, ai: false })}
           style={{
             backgroundImage: front
             ? "linear-gradient(135deg, green 5%, green)"
@@ -70,15 +71,27 @@ export const Skills = () => {
         <button
           class="button-75"
           role="button"
-          onClick={() => showSkills({ all: false, front: false })}
+          onClick={() => showSkills({ all: false, front: false, ai: false })}
           style={{
             backgroundImage:
-              !all && !front
+              !all && !front && !ai
               ? "linear-gradient(135deg, green 5%, green)"
               : "linear-gradient(135deg, rgb(24, 195, 225) 40%, rgb(24, 195, 225))"
           }}
         >
           <span class="text">Backend</span>
+        </button>
+        <button
+          className="button-75"
+          role="button"
+          onClick={() => showSkills({ all: false, front: false, ai: true })}
+          style={{
+            backgroundImage: ai
+              ? "linear-gradient(135deg, green 5%, green)"
+              : "linear-gradient(135deg, rgb(24, 195, 225) 40%, rgb(24, 195, 225))",
+          }}
+        >
+          <span className="text">AI</span>
         </button>
       </div>
       <div id="skillset">
@@ -113,15 +126,15 @@ export const Skills = () => {
           <p>TypeScript</p>
         </div>
 
-        <div style={{ display: all ? "block" : !front ? "block" : "none" }}>
+        <div style={{ display: all ? "block" : !front && !ai ? "block" : "none" }}>
           <IoLogoNodejs style={{ color: "#8bc64a" }} className="skillIc" />
           <p>NodeJs</p>
         </div>
-        <div style={{ display: all ? "block" : !front ? "block" : "none" }}>
+        <div style={{ display: all ? "block" : !front && !ai ? "block" : "none" }}>
           <SiExpress style={{ color: "#000000" }} className="skillIc" />
           <p>Express</p>
         </div>
-        <div style={{ display: all ? "block" : !front ? "block" : "none" }}>
+        <div style={{ display: all ? "block" : !front && !ai ? "block" : "none" }}>
           <SiMongodb style={{ color: "#589733" }} className="skillIc" />
           <p>MongoDB</p>
         </div>
@@ -157,7 +170,7 @@ export const Skills = () => {
           />
           <p>Vercel</p>
         </div>
-        <div style={{ display: all ? "block" : !front ? "block" : "none" }}>
+        <div style={{ display: all ? "block" : !front && !ai ? "block" : "none" }}>
           <SiHeroku
             style={{
               color: "white",
@@ -169,11 +182,22 @@ export const Skills = () => {
           />
           <p>Heroku</p>
         </div>
-        <div style={{ display: all ? "block" : !front ? "block" : "none" }}>
+        <div style={{ display: all ? "block" : !front && !ai ? "block" : "none" }}>
           <img src={mongoose} />
           <p>Mongoose</p>
         </div>
+        <div className="aiSkillTile" style={{ display: all || ai ? "flex" : "none" }}><span className="aiSkillMark">AI</span><p>Generative AI</p></div>
+        <div className="aiSkillTile" style={{ display: all || ai ? "flex" : "none" }}><span className="aiSkillMark">◎</span><p>OpenAI API</p></div>
+        <div className="aiSkillTile" style={{ display: all || ai ? "flex" : "none" }}><span className="aiSkillMark">n8n</span><p>Workflow Automation</p></div>
+        <div className="aiSkillTile" style={{ display: all || ai ? "flex" : "none" }}><span className="aiSkillMark">LC</span><p>LangChain</p></div>
+        <div className="aiSkillTile" style={{ display: all || ai ? "flex" : "none" }}><span className="aiSkillMark">HF</span><p>Hugging Face</p></div>
+        <div className="aiSkillTile" style={{ display: all || ai ? "flex" : "none" }}><span className="aiSkillMark">RAG</span><p>Retrieval-Augmented Generation</p></div>
+        <div className="aiSkillTile" style={{ display: all || ai ? "flex" : "none" }}><span className="aiSkillMark">PE</span><p>Prompt Engineering</p></div>
+        <div className="aiSkillTile" style={{ display: all || ai ? "flex" : "none" }}><span className="aiSkillMark">AG</span><p>Agentic AI</p></div>
       </div>
     </div>
   );
 };
+
+
+

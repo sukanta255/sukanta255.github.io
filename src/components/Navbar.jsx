@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+﻿import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CgCloseR } from "react-icons/cg";
@@ -116,6 +116,11 @@ export const Navbar = () => {
         <p>
           <a data-goto="about" onClick={goToSection}>
             About
+          </a>
+        </p>
+        <p>
+          <a data-goto="experience" onClick={goToSection}>
+            Experience
           </a>
         </p>
         <p>
@@ -288,6 +293,11 @@ export const Navbar = () => {
             </a>
           </p>
           <p>
+            <a data-goto="experience" onClick={goToSection}>
+              EXPERIENCE
+            </a>
+          </p>
+          <p>
             <a data-goto="skill" onClick={goToSection}>
               SKILLS
             </a>
@@ -320,3 +330,7 @@ export const Navbar = () => {
     </div>
   );
 };
+
+
+
+
