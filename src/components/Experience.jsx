@@ -10,7 +10,7 @@ const roles = [
     company: "One Health Assist (OHA)",
     dates: "July 2024 – Present",
     points: [
-      "Build and maintain MERN and Next.js healthcare applications serving 10,000+ users.",
+      "Build and maintain MERN and Next.js healthcare applications serving 50,000+ users.",
       "Implement cookie-based authentication, access and refresh token handling, session management, and device tracking.",
       "Contribute to a monorepo spanning Home, Health Shop, Find Doctor, Wellness Expert, and Lab Test; build reusable UI and shared API and routing layers.",
       "Optimize database queries and backend logic, resolve production issues, integrate Netcore features, and support code reviews and junior developers.",
