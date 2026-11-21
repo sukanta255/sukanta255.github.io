@@ -145,7 +145,7 @@ export const Navbar = () => {
           >
             Resume
           </a> */}
-          <a href="https://drive.google.com/file/d/1BLNnagG3TOkGqjSZAMhL_uKQZQcwoBps/view?usp=sharing" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>Resume</a>
+          <a href="https://drive.google.com/file/d/1sp-7WNGJOa2rGSvZ3jbihJcS9Zk1tnW1/view?usp=sharing" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>Resume</a>
         </p>
         {light ? (
           <i
@@ -301,7 +301,7 @@ export const Navbar = () => {
           <p>
             <a
               // href="https://drive.google.com/file/d/1N7iE3RrOHUf44SqilwWSCyT_qsPuAPYO/view?usp=sharing"
-              href="https://drive.google.com/file/d/1BLNnagG3TOkGqjSZAMhL_uKQZQcwoBps/view?usp=sharing"
+              href="https://drive.google.com/file/d/1sp-7WNGJOa2rGSvZ3jbihJcS9Zk1tnW1/view?usp=sharing"
               target="_blank"
             >
               RESUME{" "}
@@ -316,6 +316,7 @@ export const Navbar = () => {
     </div>
   );
 };
+
 
 
 

@@ -74,7 +74,7 @@ export const Home = () => {
           skills.
         </p>
         <div className="homeCont">
-          <a href="https://drive.google.com/file/d/1BLNnagG3TOkGqjSZAMhL_uKQZQcwoBps/view?usp=sharing" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}><button>Resume <i><BiDownload /></i></button></a>
+          <a href="https://drive.google.com/file/d/1sp-7WNGJOa2rGSvZ3jbihJcS9Zk1tnW1/view?usp=sharing" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}><button>Resume <i><BiDownload /></i></button></a>
           <div
             className="homeIcCont"
             style={{ "--icColor": light ? "#0a192f" : "#edf2f8" }}
@@ -109,6 +109,7 @@ export const Home = () => {
     </div>
   );
 };
+
 
 
 
